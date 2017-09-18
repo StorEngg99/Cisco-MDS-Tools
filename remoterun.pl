@@ -33,5 +33,5 @@ while ( !eof($host) ) {
 defined ( $_ = readline $host) or die "readline failed :$!";
 chomp;
 print "Running Commands on ",$_,"\n";
-print `$plink -l $user pw $pass $_ \"$cmd\" `;
+print `$plink -l $user pw \"$pass\"  $_  \"$cmd\" `;
 
