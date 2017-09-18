@@ -30,8 +30,8 @@ $ZS1=~s/\_N\_/\n/g;
 $ZS2=~s/\_N\_/\n/g;
 
 print ZN $zone;
-print ZN $ZS1;
-print ZN $ZS2;
+print "Database zoneset name:", $ZS1,"\n";
+print "Active zoneset name:",$ZS2,"\n";
 }
 close(ZN);
 close(START);
